@@ -4,6 +4,7 @@ import './globals.css'
 import { Providers } from './providers'
 import { Header } from './header'
 import { cn } from '@/lib/utils'
+import { BuyMeCoffee } from '@/components/buy-me-coffee'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const cookie = Cookie({
@@ -28,6 +29,9 @@ export default function RootLayout({
         <Providers>
           <Header />
           {children}
+          <div className="md:hidden fixed bottom-6 right-6">
+            <BuyMeCoffee />
+          </div>
         </Providers>
       </body>
     </html>

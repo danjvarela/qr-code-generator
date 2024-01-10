@@ -91,7 +91,7 @@ export default function Home() {
           </CardBody>
           <CardFooter className="flex flex-col gap-2 mb-2">
             {(!value || errorMessage) && (
-              <p className="text-primary">
+              <p className="text-primary text-center">
                 Type a valid url to generate a QR Code
               </p>
             )}
