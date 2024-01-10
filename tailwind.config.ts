@@ -8,8 +8,25 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
-  theme: {},
-  plugins: [nextui()],
+  theme: {
+    container: {
+      center: true,
+      padding: '1.5rem',
+    },
+    extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+        cookie: ['var(--font-cookie)'],
+      },
+    },
+  },
+  plugins: [
+    nextui({
+      layout: {
+        spacingUnit: 4,
+      },
+    }),
+  ],
   darkMode: 'class',
 }
 export default config
