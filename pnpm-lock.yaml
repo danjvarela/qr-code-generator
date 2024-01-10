@@ -14,6 +14,9 @@ dependencies:
   next:
     specifier: 14.0.4
     version: 14.0.4(react-dom@18.0.0)(react@18.0.0)
+  qrcode.react:
+    specifier: ^3.1.0
+    version: 3.1.0(react@18.0.0)
   react:
     specifier: ^18
     version: 18.0.0
@@ -6079,6 +6082,17 @@ packages:
       }
     engines: { node: '>=6' }
     dev: true
+
+  /qrcode.react@3.1.0(react@18.0.0):
+    resolution:
+      {
+        integrity: sha512-oyF+Urr3oAMUG/OiOuONL3HXM+53wvuH3mtIWQrYmsXoAq0DkvZp2RYUWFSMFtbdOpuS++9v+WAkzNVkMlNW6Q==,
+      }
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.0.0
+    dev: false
 
   /queue-microtask@1.2.3:
     resolution:
