@@ -16,6 +16,7 @@ const cookie = Cookie({
 export const metadata: Metadata = {
   title: 'QR Code Generator',
   description: 'A QR Code generator',
+  keywords: 'qr code, qr code generator, generate qr code online',
 }
 
 export default function RootLayout({
